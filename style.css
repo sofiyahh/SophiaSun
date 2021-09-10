@@ -1,0 +1,25 @@
+#stuff{
+    color: #eab01c;
+        font-family: 'Pacifico', cursive;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+}
+
+.text-center{
+    font-family: 'Courier New', Courier, monospace;
+    background: blue;
+    border: pink;
+    border-width: thick;
+    border-style: dotted;
+    border-width: 2px;
+    border-style: solid;
+
+    color: blueviolet;
+    background-color: aqua;
+}
+
+.table{
+    background-color: lightcoral;
+}
