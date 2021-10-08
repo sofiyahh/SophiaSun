@@ -1,0 +1,211 @@
+<!--The purpose of this file is to be a template for every new page that you make.  This is a blank
+page that contains all the code you need for a new page.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <title>OT CS Capstone</title>
+  <link rel="stylesheet" href="master.css">
+</head>
+<body>
+  <!--Navbar-->
+  <div data-include="nav"></div>
+  <!--Whole page container div-->
+  <div class="container">
+
+
+
+  </div>
+  <!--Bootstrap and other JS scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+
+    <h1 class= "display-1 text-center">College Quiz</h1>
+
+    <p class= "text-center">Pick a selection below to see which college you will get by clicking each option!</p>
+
+    <form class="need-validation" action="results.html" method='get'>
+    <div class="row border">
+        <div class="col-12 border">
+            Question 1: What environment do you enjoy?
+        </div>
+        <div class="col-6 border">
+            <a href="https://unsplash.com/photos/rioTUXsDImc"><img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80" alt="Uh Oh! No Image" width="400" height="300"></a>
+            <label for="yes">Hot:</label>
+            <input type="radio" id="yes" name="question1_choice" value= "Hot">
+        </div>
+        <div class="col-6 border">
+            <a href="https://unsplash.com/photos/rioTUXsDImc"><img src="https://images.unsplash.com/photo-1517299321609-52687d1bc55a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Uh Oh! No Image" width="400" height="300"></a>
+            <label for="no">Cold:</label>
+            <input type="radio" id ="no" name="question1_choice" value= "Cold">
+        </div>
+    </div>
+
+    <div class="row border">
+        <div class="col-12 border">
+            Question 2: What would you rather eat?
+        </div>
+        <div class="col-6 border">
+            <a href="https://unsplash.com/photos/rioTUXsDImc"><img src="https://images.unsplash.com/photo-1496930666207-e76e8253a950?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" alt="Uh Oh! No Image" width="400" height="300"></a>
+            <label for="yes">Burger and fries:</label>
+            <input type="radio" id="yes" name="question2_choice" value= "Burger and fries">
+        </div>
+        <div class="col-6 border">
+            <a href="https://unsplash.com/photos/rioTUXsDImc"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80" alt="Uh Oh! No Image" width="400" height="300"></a>
+            <label for="no">Salads:</label>
+            <input type="radio" id ="no" name="question2_choice" value= "Salads">
+        </div>
+    </div>
+
+    <div class="row border">
+        <div class="col-12 border">
+            Question 3: Do you perfer going out or staying in?
+        </div>
+        <div class="col-6 border">
+            <a href="https://unsplash.com/photos/rioTUXsDImc"><img src="https://images.unsplash.com/photo-1559060680-36abfac01944?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80" alt="Uh Oh! No Image" width="400" height="300"></a>
+            <label for="yes">Going out:</label>
+            <input type="radio" id="yes" name="question3_choice" value= "Going out">
+        </div>
+        <div class="col-6 border">
+            <a href="https://unsplash.com/photos/rioTUXsDImc"><img src="https://images.unsplash.com/photo-1453227588063-bb302b62f50b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" alt="Uh Oh! No Image" width="400" height="300"></a>
+            <label for="no">Staying in:</label>
+            <input type="radio" id ="no" name="question3_choice" value= "Staying in">
+        </div>
+    </div>
+
+    <div class="row border">
+        <div class="col-12 border">
+            Question 4: Do you like big classrooms or small classrooms?
+        </div>
+        <div class="col-6 border">
+            <a href="https://unsplash.com/photos/rioTUXsDImc"><img src="https://images.unsplash.com/photo-1560523160-754a9e25c68f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=836&q=80" alt="Uh Oh! No Image" width="400" height="300"></a>
+            <label for="yes">Big Classrooms:</label>
+            <input type="radio" id="yes" name="question4_choice" value= "Big Classrooms">
+        </div>
+        <div class="col-6 border">
+            <a href="https://unsplash.com/photos/rioTUXsDImc"><img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80" alt="Uh Oh! No Image" width="400" height="300"></a>
+            <label for="no">Small Classrooms:</label>
+            <input type="radio" id ="no" name="question4_choice" value= "Small Classrooms">
+        </div>
+    </div>
+
+    <div class="row border">
+        <div class="col-12 border">
+            Question 5: Which color tones do you wear the most?
+        </div>
+        <div class="col-6 border">
+            <a href="https://unsplash.com/photos/rioTUXsDImc"><img src="https://images.unsplash.com/photo-1540221652346-e5dd6b50f3e7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2069&q=80" alt="Uh Oh! No Image" width="400" height="300"></a>
+            <label for="yes">Colorful:</label>
+            <input type="radio" id="yes" name="question5_choice" value= "Colorful">
+        </div>
+        <div class="col-6 border">
+            <a href="https://unsplash.com/photos/rioTUXsDImc"><img src="https://images.unsplash.com/photo-1577020914435-7ae6b1091ebd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=435&q=80" alt="Uh Oh! No Image" width="400" height="300"></a>
+            <label for="no">Deep Colors:</label>
+            <input type="radio" id ="no" name="question5_choice" value= "Deep Colors">
+        </div>
+    </div>
+
+    <div class="row border">
+        <div class="col-12 border">
+            Question 6: Do you prefer quarter system or semester system?
+        </div>
+        <div class="col-6 border">
+            <a href="https://unsplash.com/photos/rioTUXsDImc"><img src="https://images.unsplash.com/photo-1579186147129-424f8beba2b2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2071&q=80" alt="Uh Oh! No Image" width="400" height="300"></a>
+            <label for="yes">Quarter System:</label>
+            <input type="radio" id="yes" name="question6_choice" value= "Quarter System">
+        </div>
+        <div class="col-6 border">
+            <a href="https://unsplash.com/photos/rioTUXsDImc"><img src="https://images.unsplash.com/photo-1585059895524-72359e06133a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80" alt="Uh Oh! No Image" width="400" height="300"></a>
+            <label for="no">Semester System:</label>
+            <input type="radio" id ="no" name="question6_choice" value= "Semester System">
+        </div>
+    </div>
+
+    <div class="row border">
+        <div class="col-12 border">
+            Question 7: Do you prefer living in the city or rural areas?
+        </div>
+        <div class="col-6 border">
+            <a href="https://unsplash.com/photos/rioTUXsDImc"><img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1888&q=80" alt="Uh Oh! No Image" width="400" height="300"></a>
+            <label for="yes">City:</label>
+            <input type="radio" id="yes" name="question7_choice" value= "City">
+        </div>
+        <div class="col-6 border">
+            <a href="https://unsplash.com/photos/rioTUXsDImc"><img src="https://images.unsplash.com/photo-1530844230930-8168b52d2d88?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1974&q=80" alt="Uh Oh! No Image" width="400" height="300"></a>
+            <label for="no">Rural:</label>
+            <input type="radio" id ="no" name="question7_choice" value= "Rural">
+        </div>
+    </div>
+
+    <div class="row border">
+        <div class="col-12 border">
+            Question 8: Northern California or Southern California?
+        </div>
+        <div class="col-6 border">
+            <a href="https://unsplash.com/photos/rioTUXsDImc"><img src="https://images.unsplash.com/photo-1600709751724-5a15897e9e45?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1931&q=80" alt="Uh Oh! No Image" width="400" height="300"></a>
+            <label for="yes">Northern California:</label>
+            <input type="radio" id="yes" name="question8_choice" value= "Northern California">
+        </div>
+        <div class="col-6 border">
+            <a href="https://unsplash.com/photos/rioTUXsDImc"><img src="https://images.unsplash.com/photo-1572977438018-16c62331cecb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1974&q=80" alt="Uh Oh! No Image" width="400" height="300"></a>
+            <label for="no">Southern California:</label>
+            <input type="radio" id ="no" name="question8_choice" value= "Southern California">
+        </div>
+    </div>
+
+    <div class="row border">
+        <div class="col-12 border">
+            Question 9: Big campus or small campus?
+        </div>
+        <div class="col-6 border">
+            <a href="https://unsplash.com/photos/rioTUXsDImc"><img src="https://images.unsplash.com/photo-1604180607227-a585a921d615?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80" alt="Uh Oh! No Image" width="400" height="300"></a>
+            <label for="yes">Big Campus:</label>
+            <input type="radio" id="yes" name="question9_choice" value= "Big Campus">
+        </div>
+        <div class="col-6 border">
+            <a href="https://unsplash.com/photos/rioTUXsDImc"><img src="https://images.unsplash.com/photo-1607191207672-5252c71374d3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1032&q=80" alt="Uh Oh! No Image" width="400" height="300"></a>
+            <label for="no">Small Campus:</label>
+            <input type="radio" id ="no" name="question9_choice" value= "Small Campus">
+        </div>
+    </div>
+
+    <div class="row border">
+        <div class="col-12 border">
+            Question 10: Are you interested in a STEM major?
+        </div>
+        <div class="col-6 border">
+            <a href="https://unsplash.com/photos/rioTUXsDImc"><img src="https://images.unsplash.com/photo-1589652717521-10c0d092dea9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80" alt="Uh Oh! No Image" width="400" height="300"></a>
+            <label for="yes">Yes:</label>
+            <input type="radio" id="yes" name="question10_choice" value= "Yes">
+        </div>
+        <div class="col-6 border">
+            <a href="https://unsplash.com/photos/rioTUXsDImc"><img src="https://images.unsplash.com/photo-1603398938378-e54eab446dde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80" alt="Uh Oh! No Image" width="400" height="300"></a>
+            <label for="no">No:</label>
+            <input type="radio" id ="no" name="question10_choice" value= "No">
+        </div>
+    </div>
+
+          <br>
+          <button type="submit" class="btn btn-primary mt-3">Submit</button>
+    </form>
+
+    <script type="text/javascript">
+        const queryString = window.location.search;
+        const question1_choice = urlParams.get('question1_choice');
+        const colors = urlParams.getAll('colors')
+        const writestuff = urlParams.get('writestuff');
+        var output = "Your question 1 answer is: " + question1_choice;
+    
+        jQuery(document).ready(function() {
+          $("#results").html(output); 
+        });
+    
+      </script>
+</body>
+</html>

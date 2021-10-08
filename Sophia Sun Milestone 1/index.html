@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <title>OT CS Capstone</title>
+</head>
+<body>
+  <div data-include="nav"></div>
+  <div class="container">
+    <h1 class= "display-1 text-center">College Quiz</h1>
+
+    <p class= "text-center">Play this fun quiz to see which college fits you!</p>
+
+  </div>
+  <!--Bootstrap and other JS scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+    
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://ktla.com/wp-content/uploads/sites/4/2019/10/berkeley.jpg?strip=1" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.ucdavis.edu/sites/default/files/styles/sf_title_banner/public/media/images/administration-uc-davis.jpg?h=9de04ce3&itok=1p3tLF0L" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.doingcollege.com/wp-content/uploads/2018/06/UC-Irvine-960.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1594653283108-953a4f93400e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1680&q=80" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="row border">
+      <div class="col-12 border">
+         <p>Instructions: Select what fits your preferences!</p>
+      </div>
+  </div>
+
+  <div class="row border">
+    <div class="col-6 border">
+      <form action="quiz.html" method='get'>
+        <h3>Test which UC University fits you!</h3>
+    
+        <label for="nametag">NAME: </label>
+        <input type="name" class="form-control" id="name" name="email">
+        <br>
+        <label for="emailtag">EMAIL ADDRESS:</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+    
+        <p>Do you know which school you want to go to? (1-3)</p>
+        <select name="options">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Maybe">Maybe</option>
+          </select>
+          
+          <br>
+          <br>
+          <input type="submit" name="" value="Go to Quiz!">
+    </form>
+    </div>
+
+    <div class="col-6 border">
+      <a href="https://unsplash.com/photos/rioTUXsDImc"><img src="https://lh3.googleusercontent.com/proxy/i2CVFd3nZC58U6ckHrsqTcWS_DhqpFX-wlJwDZTGeKr7pWZawTnvb1_ybAG6sz9xYCnVbiZjQejHOuwzD3nDzUOrjrPgXc4" alt="Uh Oh! No Image" width="500" height="400"></a>
+   </div>
+</div>
+
+    <script type="text/javascript">
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const email = urlParams.get('email');
+      const pickanum = urlParams.get('pickanum');
+      const colors = urlParams.getAll('colors')
+      const writestuff = urlParams.get('writestuff');
+      var output = "Your email is: " + email + " <br> The number you picked is: " + pickanum + "<br> the colors you picked were: " + colors + "<br> and you wrote the following: <br>" + writestuff;
+  
+      jQuery(document).ready(function() {
+        $("#results").html(output); 
+      });
+  
+    </script>
+
+</body>
+</html>
