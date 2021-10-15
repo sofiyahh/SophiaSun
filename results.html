@@ -10,6 +10,7 @@ page that contains all the code you need for a new page.-->
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <title>OT CS Capstone</title>
+  <link rel="stylesheet" href="master.css">
 </head>
 <body>
   <!--Navbar-->
@@ -27,8 +28,15 @@ page that contains all the code you need for a new page.-->
 
     <h1 class= "display-1 text-center">Results</h1>
 
-    <div id="results"></div>
+    <div class="row border">
+      <div class="col-12 border">
+          <h5>Your results are: </h5>
+          <a href="drums.gif"><img src="drums.gif" alt="Uh Oh! No Image" width="500" height="400"></a>
+      </div>
+    </div>
 
+    <div id="results"></div>
+    
     <script type="text/javascript">
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
@@ -42,25 +50,39 @@ page that contains all the code you need for a new page.-->
       const question8_choice = urlParams.get('question8_choice');
       const question9_choice = urlParams.get('question9_choice');
       const question10_choice = urlParams.get('question10_choice');
-      var output = "<br><br>1. Environment you enjoy: " + question1_choice + "<br>2. You would rather eat: " + question2_choice + "<br>3. You perfer: " + question3_choice + "<br>4. You like: " + question4_choice + "<br>5. Color tones you wear the most: " + question5_choice + "<br>6. You prefer: " + question6_choice + "<br>7. You prefer living in the: " + question7_choice + "<br>8. You like: " + question8_choice + "<br>9. You prefer a: " + question9_choice + "<br>10. Interested in a STEM major: " + question10_choice;
+      var output = "<br>1. Environment you enjoy: " + question1_choice + "<br>2. You would rather eat: " + question2_choice + "<br>3. You perfer: " + question3_choice + "<br>4. You like: " + question4_choice + "<br>5. Color tones you wear the most: " + question5_choice + "<br>6. You prefer: " + question6_choice + "<br>7. You prefer living in the: " + question7_choice + "<br>8. You like: " + question8_choice + "<br>9. You prefer a: " + question9_choice + "<br>10. Interested in a STEM major: " + question10_choice;
       jQuery(document).ready(function() {
         $("#results").html(output); 
       });
   
     </script>
 
-    <script type="text/javascript">
-      const queryString = window.location.search;
-      const question1_choice = urlParams.get('question1_choice');
-      const colors = urlParams.getAll('colors')
-      const writestuff = urlParams.get('writestuff');
-      var output = "Your question 1 answer is: " + question1_choice;
-  
-      jQuery(document).ready(function() {
-        $("#results").html(output); 
-      });
-  
-    </script>
+    <br>
+    <div class="row border">
+        <div class="col-12 border">
+            <h5>The School You Got:</h5> 
+            <a href="congrats.gif"><img src="congrats.gif" alt="Uh Oh! No Image" width="500" height="400"></a>
+
+        </div>
+      </div>
+
+    <div class="row border">
+        <div class="col-12 border text-center">
+            <h1>UC Santa Barbara</h1> 
+            <a href="https://unsplash.com/photos/rioTUXsDImc"><img src="https://my.sa.ucsb.edu/catalog/Current/Images/photo_catalognoborder.jpg" alt="Uh Oh! No Image" width="700" height="400"></a>
+        </div>
+      </div>
+      
+      <br>
+    <div class="row border">
+        <div class="col-12 border">
+            <h5>Click the button below to learn more about the UC University you got!</h5>
+        </div>
+      </div>
+
+      <form action="information.html" method='get'>
+      <input type="submit" name="" class="btn btn-primary mt-3" value="Go to Information Page!">
+    </form>
 
 </body>
 </html>
