@@ -1,0 +1,23 @@
+img {
+    height: 120;
+    width: 120;
+}
+
+.text-center{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, cursive;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    
+    color: #fd828c;
+    border: pink;
+    border-width: thick;
+    border-width: 2px;
+    border-style: solid;
+
+    background-color:rgb(84, 173, 143);
+}
+
+h2{
+    color:rgb(84, 173, 143);
+}
